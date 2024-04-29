@@ -18,19 +18,19 @@ var restart,gameOver;
 var restartImage, gameOverImage;
 
 function preload(){
-  trex_running = loadAnimation("trex1.png","trex3.png","trex4.png");
-  trex_collided = loadImage("trex_collided.png");
+  trex_running = loadAnimation("Images/Trex/trex1.png","Images/Trex/trex3.png","Images/Trex/trex4.png");
+  trex_collided = loadImage("Images/Trex/trex_collided.png");
   
-  groundImage = loadImage("ground2.png");
+  groundImage = loadImage("Images/ground2.png");
   
-  cloudImage = loadImage("cloud.png");
+  cloudImage = loadImage("Images/cloud.png");
   
-  obstacle1 = loadImage("obstacle1.png");
-  obstacle2 = loadImage("obstacle2.png");
-  obstacle3 = loadImage("obstacle3.png");
-  obstacle4 = loadImage("obstacle4.png");
-  obstacle5 = loadImage("obstacle5.png");
-  obstacle6 = loadImage("obstacle6.png");
+  obstacle1 = loadImage("Images/Obstacles/obstacle1.png");
+  obstacle2 = loadImage("Images/Obstacles/obstacle2.png");
+  obstacle3 = loadImage("Images/Obstacles/obstacle3.png");
+  obstacle4 = loadImage("Images/Obstacles/obstacle4.png");
+  obstacle5 = loadImage("Images/Obstacles/obstacle5.png");
+  obstacle6 = loadImage("Images/Obstacles/obstacle6.png");
   
   restartImage = loadImage('restart.png');
   
@@ -45,8 +45,7 @@ function setup() {
   trex.addAnimation('collided',trex_collided);
   trex.scale = 0.5;
   
-  ground = createSprite
-  (200,180,400,20);
+  ground = createSprite(200,180,400,20);
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
   ground.velocityX = -4;
